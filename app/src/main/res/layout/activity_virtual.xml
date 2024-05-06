@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VirtualActivity">
+
+    <Button
+        android:id="@+id/tamEatButtom"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="28dp"
+        android:backgroundTint="#FFC107"
+        android:text="Eat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confettiGif" />
+
+    <Button
+        android:id="@+id/tamFeedButtom"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#FFC107"
+        android:text="Feed"
+        app:layout_constraintEnd_toStartOf="@+id/tamEatButtom"
+        app:layout_constraintStart_toEndOf="@+id/tamPlayButtom"
+        app:layout_constraintTop_toBottomOf="@+id/confettiGif" />
+
+    <Button
+        android:id="@+id/tamPlayButtom"
+        android:layout_width="105dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#FFC107"
+        android:text="Play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confettiGif" />
+
+    <ImageView
+        android:id="@+id/tamEatingGif"
+        android:layout_width="411dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="75dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tamEatButtom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/alt_happy_dog" />
+
+    <TextView
+        android:id="@+id/stateTextHunger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="278dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Hunger"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tamPlayButtom" />
+
+    <TextView
+        android:id="@+id/stateTextClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="278dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Clean"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateTextHunger" />
+
+    <TextView
+        android:id="@+id/stateTextHappiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="278dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Happiness"
+        android:textAlignment="viewEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateTextClean" />
+
+    <ImageView
+        android:id="@+id/confettiGif"
+        android:layout_width="369dp"
+        android:layout_height="258dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/tamagochi_confetti"
+        tools:layout_editor_absoluteY="113dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
